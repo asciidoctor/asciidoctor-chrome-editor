@@ -1,0 +1,15 @@
+= asciidoctor-chrome-editor, Asciidoctor Chrome Editor
+Guillaume Grossetie
+:sources: https://github.com/asciidoctor/asciidoctor-chrome-editor
+:license: https://github.com/asciidoctor/asciidoctor-chrome-editor/blob/master/LICENSE
+:webstore: https://chrome.google.com/webstore/detail/asciidoctorjs-live-previe/iaalpfgpbocpdfblpnhhgllgbdbchmia
+
+This project uses https://github.com/asciidoctor/asciidoctor.js[Asciidoctor.js] to render AsciiDoc
+and https://github.com/ajaxorg/ace[Ace] to edit content.
+
+== Copyright
+
+Copyright (C) 2013 Guillaume Grossetie.
+Free use of this software is granted under the terms of the MIT License.
+
+See the {license}[LICENSE] file for details.

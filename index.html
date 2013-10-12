@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Asciidoctor.js Editor</title>
+    <script type="text/javascript" src="js/opal.js"></script>
+    <script type="text/javascript" src="js/asciidoctor.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/highlight.min.js"></script>
+    <link rel="stylesheet" href="css/github.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/asciidoctor.css">
+</head>
+<body>
+<div class="row">
+    <div class="span12">
+        <p>
+
+        <div class="btn-group">
+            <button type="button" class="btn" id="bold" title="Bold <Ctrl+B>"><i class="icon-bold"></i></button>
+            <button type="button" class="btn" id="italic" title="Italic <Ctrl+I>"><i class="icon-italic"></i></button>
+            <button type="button" class="btn" id="h1" title="Heading 1 <Ctrl+1>"><i class="icon-text-height"></i>1</button>
+            <button type="button" class="btn" id="h2" title="Heading 2 <Ctrl+2>"><i class="icon-text-height"></i>2</button>
+            <button type="button" class="btn" id="h3" title="Heading 3 <Ctrl+3>"><i class="icon-text-height"></i>3</button>
+            <button type="button" class="btn" id="h4" title="Heading 4 <Ctrl+4>"><i class="icon-text-height"></i>4</button>
+        </div>
+        </p>
+    </div>
+</div>
+<div class="row-fluid">
+    <div class="span6">
+        <div id="ace_embedded_code">= Title
+
+content</div>
+    </div>
+    <div class="span6">
+        <div id="render">
+        </div>
+    </div>
+</div>
+<script src="/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/asciidocify.js"></script>
+<script type="text/javascript" src="js/editor-init.js"></script>
+<script type="text/javascript" src="js/editor-command.js"></script>
+<script type="text/javascript" src="js/editor-toolbar.js"></script>
+</body>
+</html>
