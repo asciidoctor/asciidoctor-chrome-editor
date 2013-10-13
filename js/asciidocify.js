@@ -1,3 +1,5 @@
+var editor = ace.edit("ace_embedded_code");
+
 var ASCIIDOCTOR_OPTIONS = Opal.hash2([ 'attributes' ], {
     'attributes':[ 'notitle!' ]
 });
@@ -6,7 +8,6 @@ var ASCIIDOCTOR_OPTIONS = Opal.hash2([ 'attributes' ], {
  * AsciiDocify the content!
  */
 function asciidocify() {
-    var editor = ace.edit("ace_embedded_code");
     render(editor.getValue());
 }
 
@@ -43,5 +44,18 @@ function showErrorMessage(message) {
     var messageText = "<p>" + message + "</p>";
     $('#render').html("<h4>Error</h4>" + messageText);
 }
+
+// Listen to Asciidoctor.js Live Preview Extension
+chrome.runtime.onMessageExternal.addListener(function (url, sender) {
+    if (sender.id == "dhjgmmkaeljbgmbjapejcpopihaneeoj") {
+        $.ajax({
+            url:url,
+            cache:false,
+            complete:function (data) {
+                editor.setValue(data.responseText);
+            }
+        });
+    }
+});
 
 asciidocify();

@@ -17,6 +17,7 @@
     },
 
     "permissions":[
-        "app.window"
+        "app.window",
+		"<all_urls>"
     ]
 }
