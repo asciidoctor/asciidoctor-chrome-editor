@@ -2,9 +2,15 @@ var editor = ace.edit("ace_embedded_code");
 editor.setTheme("ace/theme/monokai");
 editor.session.setMode("ace/mode/asciidoc");
 
+var AUTO_RELOAD_INTERVAL_TIME = 2000;
+
 editor.session.on('change', function () {
-    var data = editor.getValue();
-    render(data);
+    // Delay rendering by 2 seconds.
+    var autoReloadInterval = setInterval(function () {
+        var data = editor.getValue();
+        render(data);
+        clearInterval(autoReloadInterval);
+    }, AUTO_RELOAD_INTERVAL_TIME);
 });
 
 var current = chrome.app.window.current();
