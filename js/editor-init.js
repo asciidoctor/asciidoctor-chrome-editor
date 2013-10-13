@@ -15,6 +15,7 @@ var updateMaxLinesNumber = function () {
     editor.setOptions({
         maxLines:maxLines
     });
+    $("#render").height(newHeight + "px");
 };
 
 // Set initial lines number to match initial content
