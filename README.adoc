@@ -15,12 +15,8 @@ endif::[]
 This project uses https://github.com/asciidoctor/asciidoctor.js[Asciidoctor.js] to render AsciiDoc
 and https://github.com/ajaxorg/ace[Ace] to edit content.
 
-[IMPORTANT]
-====
-*This project is archived and not actively maintained.*
-
+IMPORTANT: *This project is archived and not actively maintained.* +
 If you would like to develop it further, please introduce yourself on image:https://badges.gitter.im/Join%20In.svg[Gitter, link=https://gitter.im/asciidoctor/asciidoctor]
-====
 
 == Copyright
 
